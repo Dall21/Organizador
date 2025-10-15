@@ -6,6 +6,7 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('index');
+        $blade = service(name: "blade");
+        return $blade->render('home');
     }
 }
