@@ -49,13 +49,13 @@
               🌐 Idioma
             </button>
             <ul class="dropdown-menu dropdown-menu-end">
-              <li><a class="dropdown-item" href="#">Español</a></li>
-              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="{{ base_url("idioma/es") }}">Español</a></li>
+              <li><a class="dropdown-item" href="{{ base_url("idioma/en") }}">ingles</a></li>
             </ul>
           </div>
 
-          <a href="#" class="btn btn-outline-light me-2">Iniciar sesión</a>
-          <a href="#" class="btn btn-primary">Registrarse</a>
+          <a href= "{{ base_url("auth/login") }}" class="btn btn-outline-light me-2">Iniciar sesión</a>
+          <a href= "{{ base_url("auth/register") }}" class="btn btn-primary">Registrarse</a>
         </div>
       </div>
     </div>
@@ -63,8 +63,8 @@
 
   <section class="hero">
     <div class="container">
-      <h1>Bienvenido a Organizador</h1>
-      <p>Tu plataforma para aprender, conectar y crecer.</p>
+      <h1>{{ lang('App.home.greeting') }}</h1>
+      <p>{{ lang('App.home.description') }}</p>
       <a href="#" class="btn btn-primary btn-lg mt-4">Comenzar ahora</a>
     </div>
   </section>
