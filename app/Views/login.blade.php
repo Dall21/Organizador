@@ -47,7 +47,7 @@
             <div class="col-md-6 col-lg-5">
                 <div class="card shadow-sm">
                     <div class="card-body p-4">
-                        <h3 class="text-center mb-4">Crear cuenta</h3>
+                        <h3 class="text-center mb-4">Ingresar cuenta</h3>
                         @if (session('error'))
                             <div class="alert alert-danger">{{ session('error') }}</div>
                         @endif
@@ -67,13 +67,7 @@
                             <div class="alert alert-success">{{ session('success') }}</div>
                         @endif
                         <form method="post" action="{{base_url('auth/register_attempt') }}">
-                            <!-- Nombre -->
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Nombre completo</label>
-                                <input type="text" class="form-control" id="nombre" name="nombre"
-                                    placeholder="Ingresa tu nombre" required>
-                            </div>
-
+                          
                             <!-- Email -->
                             <div class="mb-3">
                                 <label for="email" class="form-label">Correo electrónico</label>
@@ -88,22 +82,10 @@
                                     placeholder="Ingresa una contraseña" required>
                             </div>
 
-                            <!-- Confirmar Contraseña -->
-                            <div class="mb-3">
-                                <label for="password_confirm" class="form-label">Confirmar contraseña</label>
-                                <input type="password" class="form-control" id="confirm_password"
-                                    name="password_confirm" placeholder="Repite la contraseña" required>
-                            </div>
-
-
                             <div class="d-grid">
                                 <button type="submit" class="btn btn-primary">Registrarse</button>
                             </div>
                         </form>
-
-                        <p class="text-center mt-3 mb-0">
-                            ¿Ya tienes cuenta? <a href="#">Inicia sesión</a>
-                        </p>
                     </div>
                 </div>
             </div>

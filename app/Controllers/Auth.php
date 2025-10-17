@@ -34,4 +34,10 @@ class Auth extends BaseController
         $blade = service(name: "blade");
         return $blade->render('register');
     }
+    public function showFormLogin(): string
+    {
+        $blade = service(name: "blade");
+        return $blade->render('login');
+    }
 }
+
