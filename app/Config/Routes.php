@@ -12,3 +12,5 @@ $routes->get('auth/login','Auth::showFormLogin');
 $routes->post('auth/register_attempt','Auth::register_attempt');
 $routes->post('auth/login_attempt','Auth::login_attempt');
 $routes->post('auth/task','Auth::task');
+
+$routes->get('dashboard','Dashboard::index');
