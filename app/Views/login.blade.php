@@ -66,7 +66,7 @@
                         @if (session('success'))
                             <div class="alert alert-success">{{ session('success') }}</div>
                         @endif
-                        <form method="post" action="{{base_url('auth/register_attempt') }}">
+                        <form method="post" action="{{base_url('auth/login_attempt') }}">
                           
                             <!-- Email -->
                             <div class="mb-3">
