@@ -11,6 +11,9 @@ $routes->get('auth/register','Auth::showForm');
 $routes->get('auth/login','Auth::showFormLogin');
 $routes->post('auth/register_attempt','Auth::register_attempt');
 $routes->post('auth/login_attempt','Auth::login_attempt');
-$routes->post('auth/task','Auth::task');
+
 
 $routes->get('dashboard','Dashboard::index');
+$routes->get('dashboard/task','Task::index');
+$routes->get('dashboard/users','Users::index');
+$routes->get('dashboard/profile','Profile::index');

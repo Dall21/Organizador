@@ -1,5 +1,7 @@
 @extends('layouts.dashboard_layout')
 
 @section('content')
-<h1>Hola Esto es la infomracion del dahboard y no solo la del dashboard layout</h1>
+<h1>Bienvenido {{ session()->get('name') }} a la pagina principal de tu organizador</h1>
 @endsection 
+
+

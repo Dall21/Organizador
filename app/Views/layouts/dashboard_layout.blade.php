@@ -118,25 +118,25 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">
+                        <a class="nav-link" href="/dashboard">
                             <i class="fas fa-home"></i>
                             <span>Home</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="{{ base_url('dashboard/task') }}">
                             <i class="fas fa-tasks"></i>
                             <span>Task</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="{{ base_url('dashboard/users') }}">
                             <i class="fas fa-users"></i>
                             <span>Users</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="{{ base_url('dashboard/profile') }}">
                             <i class="fas fa-user-circle"></i>
                             <span>Profile</span>
                         </a>
@@ -144,7 +144,7 @@
                 </ul>
                 
                 <div class="d-flex align-items-center">
-                    <span class="user-greeting">¡Hola, [Nombre del Usuario]!</span>
+                    <span class="user-greeting">¡Hola, {{ session()->get('name') }}!</span>
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="#">
@@ -153,6 +153,15 @@
                             </a>
                         </li>
                     </ul>
+                    <div class="dropdown me-3">
+            <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              🌐 Idioma
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="{{ base_url("idioma/es") }}">Español</a></li>
+              <li><a class="dropdown-item" href="{{ base_url("idioma/en") }}">ingles</a></li>
+            </ul>
+          </div>
                 </div>
             </div>
         </div>
