@@ -70,7 +70,7 @@
                             <!-- Nombre -->
                             <div class="mb-3">
                                 <label for="name" class="form-label">Nombre completo</label>
-                                <input type="text" class="form-control" id="nombre" name="nombre"
+                                <input type="text" class="form-control" id="name" name="name"
                                     placeholder="Ingresa tu nombre" required>
                             </div>
 
