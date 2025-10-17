@@ -25,8 +25,11 @@ class Auth extends BaseController
             ],
         ];
         
+        if (!$this->validate($rules)) {
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
-        
+        }        
+
+        return redirect()->back()->withInput()->with('success','Bienvenido seria');
 
     }
     public function showForm(): string
