@@ -10,6 +10,7 @@
                 <div class="col-md-8">
                     <p class="lead">Organiza y gestiona tus tareas pendientes</p>
                 </div>
+                <h1>Hola {{ session()->get('name') }} aqui podras visualizar tus tareas</h1>
                 <div class="col-md-4 text-end">
                     <a href="index.html" class="btn btn-light btn-lg">Ver Lista de Alumnos</a>
                 </div>

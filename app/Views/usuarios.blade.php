@@ -5,7 +5,6 @@
 @endsection 
 
 <body>
-    <!-- Header -->
     <div class="header-section">
         <div class="container">
             <div class="row align-items-center">
@@ -21,7 +20,6 @@
     </div>
 
     <div class="container">
-        <!-- Filtros -->
         <div class="row mb-4">
             <div class="col-md-4">
                 <div class="input-group">
@@ -42,14 +40,11 @@
                 <button class="btn btn-outline-secondary w-100" id="resetFilters">Restablecer filtros</button>
             </div>
         </div>
-
-        <!-- Tarjetas de Alumnos -->
         <div class="row" id="studentsContainer">
-            <!-- Alumno 1 -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card student-card h-100">
                     <div class="card-header bg-primary text-white">
-                        <h5 class="card-title mb-0">Ana García López</h5>
+                        <h5 class="card-title mb-0">Jason Herrera</h5>
                     </div>
                     <div class="card-body">
                         <p class="card-text"><strong>Curso:</strong> Matemáticas Avanzadas</p>
@@ -66,12 +61,10 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- Alumno 2 -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card student-card h-100">
                     <div class="card-header bg-success text-white">
-                        <h5 class="card-title mb-0">Carlos Rodríguez Méndez</h5>
+                        <h5 class="card-title mb-0">Amos Reyes</h5>
                     </div>
                     <div class="card-body">
                         <p class="card-text"><strong>Curso:</strong> Ciencias Naturales</p>
@@ -87,12 +80,10 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- Alumno 3 -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card student-card h-100">
                     <div class="card-header bg-info text-white">
-                        <h5 class="card-title mb-0">María Fernández Soto</h5>
+                        <h5 class="card-title mb-0">Adrian Cortave</h5>
                     </div>
                     <div class="card-body">
                         <p class="card-text"><strong>Curso:</strong> Historia Universal</p>
@@ -107,12 +98,10 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- Alumno 4 -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card student-card h-100">
                     <div class="card-header bg-warning text-dark">
-                        <h5 class="card-title mb-0">Javier Morales Ruiz</h5>
+                        <h5 class="card-title mb-0">David Estrada</h5>
                     </div>
                     <div class="card-body">
                         <p class="card-text"><strong>Curso:</strong> Literatura Contemporánea</p>
@@ -130,12 +119,10 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- Alumno 5 -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card student-card h-100">
                     <div class="card-header bg-danger text-white">
-                        <h5 class="card-title mb-0">Laura Chen Wu</h5>
+                        <h5 class="card-title mb-0">Mario Cuxil</h5>
                     </div>
                     <div class="card-body">
                         <p class="card-text"><strong>Curso:</strong> Matemáticas Avanzadas</p>
@@ -151,12 +138,10 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- Alumno 6 -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card student-card h-100">
                     <div class="card-header bg-secondary text-white">
-                        <h5 class="card-title mb-0">Diego Silva Ortega</h5>
+                        <h5 class="card-title mb-0">Diego Lopez</h5>
                     </div>
                     <div class="card-body">
                         <p class="card-text"><strong>Curso:</strong> Ciencias Naturales</p>
@@ -174,8 +159,6 @@
                 </div>
             </div>
         </div>
-        
-        <!-- Estadísticas -->
         <div class="row mt-5">
             <div class="col-12">
                 <div class="card">
@@ -214,8 +197,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
