@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <!-- Bootstrap CSS -->
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome para iconos -->
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f8f9fa;
-            padding-top: 70px; /* Para compensar la navbar fija */
+            padding-top: 70px;
         }
         
         .top-navbar {
@@ -101,7 +101,7 @@
     </style>
 </head>
 <body>
-    <!-- Top Navigation Bar -->
+   
     <nav class="navbar navbar-expand-lg top-navbar fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -167,12 +167,12 @@
         </div>
     </nav>
     
-    <!-- Main Content -->
+   
     <div class="main-content">
         @yield('content')
     </div>
 
-    <!-- Bootstrap JS Bundle with Popper -->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

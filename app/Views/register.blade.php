@@ -67,28 +67,27 @@
                             <div class="alert alert-success">{{ session('success') }}</div>
                         @endif
                         <form method="post" action="{{base_url('auth/register_attempt') }}">
-                            <!-- Nombre -->
+                           
                             <div class="mb-3">
                                 <label for="name" class="form-label">Nombre completo</label>
                                 <input type="text" class="form-control" id="name" name="name"
                                     placeholder="Ingresa tu nombre" required>
                             </div>
 
-                            <!-- Email -->
                             <div class="mb-3">
                                 <label for="email" class="form-label">Correo electrónico</label>
                                 <input type="email" class="form-control" id="email" name="email"
                                     placeholder="ejemplo@correo.com" required>
                             </div>
 
-                            <!-- Contraseña -->
+                            
                             <div class="mb-3">
                                 <label for="password" class="form-label">Contraseña</label>
                                 <input type="password" class="form-control" id="password" name="password"
                                     placeholder="Ingresa una contraseña" required>
                             </div>
 
-                            <!-- Confirmar Contraseña -->
+                
                             <div class="mb-3">
                                 <label for="password_confirm" class="form-label">Confirmar contraseña</label>
                                 <input type="password" class="form-control" id="confirm_password"
